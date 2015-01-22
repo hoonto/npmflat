@@ -3,13 +3,21 @@
 var path = require("path"),
     npmflat = require(path.join(__dirname, '..', '/lib/npmflat'));
 
-if (process.argv.length < 3) {
+var currentWD = process.cwd();
+var packagePath = currentWD + '/package.json';
+var packageJSON = '';
+
+try {
+    packageJSON = require(packagePath);
+}catch(e){}
+
+if (process.argv[2] === '--help' || !packageJSON) {
     process.stderr.write([
         "       _      .  ___ ",
         " |\\ | |_ |   /_\\  |  ",
         " | \\| |  |_ /   \\ |  ",
-    ].join('\n')+'\n\n'+" Usage: "+path.basename(process.argv[1])+" package.json [,schema.txt]\n");
+    ].join('\n')+'\n\n'+" Usage: "+path.basename(process.argv[1])+" [,schema.txt]\n Must be executed within a directory that contains a 'package.json' file.\n");
     process.exit(1);
 } else {
-    npmflat.packageBuilder.build(process.argv[2],process.argv[3]);
+    npmflat.packageBuilder.build(currentWD, packagePath,process.argv[2]);
 }
