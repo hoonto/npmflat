@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+var path = require("path"),
+    npmflat = require(path.join(__dirname, '..', '/lib/npmflat'));
+
+if (process.argv.length < 3) {
+    process.stderr.write([
+        "       _      .  ___ ",
+        " |\\ | |_ |   /_\\  |  ",
+        " | \\| |  |_ /   \\ |  ",
+    ].join('\n')+'\n\n'+" Usage: "+path.basename(process.argv[1])+" package.json [,schema.txt]\n");
+    process.exit(1);
+} else {
+    npmflat.packageBuilder.build(process.argv[2],process.argv[3]);
+}

@@ -1,0 +1,38 @@
+{
+    "globals" : {
+        "emit"     : false,
+        "provides" : false,
+        "getRow"   : false,
+        "log"      : false,
+        "send"     : false,
+
+        "it"       : false,
+        "describe" : false,
+        "before"   : false,
+        "after"    : false,
+        "window"   : false,
+        "document" : false,
+        "angular"  : false,
+        "public_vars" : false,
+        "setup_horizontal_menu": false,
+        "setup_sidebar_menu": false,
+        "ps_init": false,
+        "TweenMax": false,
+        "TweenLite": false,
+        "Expo": false,
+        "hideLoadingBar": false,
+        "showLoadingBar": false,
+        "Power4": false,
+        "Power1": false,
+        "cbr_replace": false,
+        "isxs": false,
+        "Sine": false,
+        "Circ": false,
+        "localStorage": false,
+        "sessionStorage": false
+
+    },
+
+    "jquery": true,
+    "node" : true
+}

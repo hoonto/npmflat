@@ -1,0 +1,414 @@
+{
+    "connect-multiparty": {
+        "__VERSION__": "1.2.5",
+        "__NUMDEPS__": 4
+    },
+    "body-parser": {
+        "__VERSION__": "1.10.2",
+        "__NUMDEPS__": 8,
+        "on-finished": {
+            "__VERSION__": "2.2.0",
+            "__NUMDEPS__": 1
+        },
+        "qs": {
+            "__VERSION__": "2.3.3",
+            "__NUMDEPS__": 0
+        }
+    },
+    "compression": {
+        "__VERSION__": "1.3.0",
+        "__NUMDEPS__": 6
+    },
+    "bcryptjs": {
+        "__VERSION__": "2.1.0",
+        "__NUMDEPS__": 0
+    },
+    "errorhandler": {
+        "__VERSION__": "1.3.2",
+        "__NUMDEPS__": 2
+    },
+    "loopback-boot": {
+        "__VERSION__": "2.6.3",
+        "__NUMDEPS__": 6
+    },
+    "loopback": {
+        "__VERSION__": "2.10.2",
+        "__NUMDEPS__": 19,
+        "bcryptjs": {
+            "__VERSION__": "2.0.2",
+            "__NUMDEPS__": 0
+        },
+        "body-parser": {
+            "__VERSION__": "1.8.4",
+            "__NUMDEPS__": 8
+        },
+        "debug": {
+            "__VERSION__": "2.0.0",
+            "__NUMDEPS__": 1
+        },
+        "on-finished": {
+            "__VERSION__": "2.1.0",
+            "__NUMDEPS__": 1
+        },
+        "raw-body": {
+            "__VERSION__": "1.3.0",
+            "__NUMDEPS__": 2
+        },
+        "qs": {
+            "__VERSION__": "2.2.4",
+            "__NUMDEPS__": 0
+        }
+    },
+    "serve-favicon": {
+        "__VERSION__": "2.2.0",
+        "__NUMDEPS__": 4
+    },
+    "mssql": {
+        "__VERSION__": "1.3.0",
+        "__NUMDEPS__": 2
+    },
+    "loopback-connector-mssql": {
+        "__VERSION__": "1.3.0",
+        "__NUMDEPS__": 5
+    },
+    "loopback-datasource-juggler": {
+        "__VERSION__": "2.14.1",
+        "__NUMDEPS__": 6,
+        "qs": {
+            "__VERSION__": "1.2.2",
+            "__NUMDEPS__": 0
+        },
+        "debug": {
+            "__VERSION__": "1.0.4",
+            "__NUMDEPS__": 1
+        },
+        "inflection": {
+            "__VERSION__": "1.3.8",
+            "__NUMDEPS__": 0
+        }
+    },
+    "loopback-sdk-angular": {
+        "__VERSION__": "1.3.7",
+        "__NUMDEPS__": 1
+    },
+    "multiparty": {
+        "__VERSION__": "3.3.2",
+        "__NUMDEPS__": 2
+    },
+    "qs": {
+        "__VERSION__": "2.2.5",
+        "__NUMDEPS__": 0
+    },
+    "on-finished": {
+        "__VERSION__": "2.1.1",
+        "__NUMDEPS__": 1
+    },
+    "type-is": {
+        "__VERSION__": "1.5.5",
+        "__NUMDEPS__": 2
+    },
+    "bytes": {
+        "__VERSION__": "1.0.0",
+        "__NUMDEPS__": 0
+    },
+    "raw-body": {
+        "__VERSION__": "1.3.2",
+        "__NUMDEPS__": 2
+    },
+    "debug": {
+        "__VERSION__": "2.1.1",
+        "__NUMDEPS__": 1
+    },
+    "compressible": {
+        "__VERSION__": "2.0.1",
+        "__NUMDEPS__": 1
+    },
+    "accepts": {
+        "__VERSION__": "1.2.2",
+        "__NUMDEPS__": 2
+    },
+    "on-headers": {
+        "__VERSION__": "1.0.0",
+        "__NUMDEPS__": 0
+    },
+    "escape-html": {
+        "__VERSION__": "1.0.1",
+        "__NUMDEPS__": 0
+    },
+    "commondir": {
+        "__VERSION__": "0.0.1",
+        "__NUMDEPS__": 0
+    },
+    "continuation-local-storage": {
+        "__VERSION__": "3.1.2",
+        "__NUMDEPS__": 2
+    },
+    "inflection": {
+        "__VERSION__": "1.4.2",
+        "__NUMDEPS__": 0
+    },
+    "loopback-connector-remote": {
+        "__VERSION__": "1.0.3",
+        "__NUMDEPS__": 3
+    },
+    "uid2": {
+        "__VERSION__": "0.0.3",
+        "__NUMDEPS__": 0
+    },
+    "strong-remoting": {
+        "__VERSION__": "2.12.0",
+        "__NUMDEPS__": 14,
+        "qs": {
+            "__VERSION__": "2.3.3",
+            "__NUMDEPS__": 0
+        },
+        "inflection": {
+            "__VERSION__": "1.5.3",
+            "__NUMDEPS__": 0
+        }
+    },
+    "nodemailer-stub-transport": {
+        "__VERSION__": "0.1.5",
+        "__NUMDEPS__": 0
+    },
+    "loopback-phase": {
+        "__VERSION__": "1.2.0",
+        "__NUMDEPS__": 2
+    },
+    "express": {
+        "__VERSION__": "4.11.1",
+        "__NUMDEPS__": 24,
+        "on-finished": {
+            "__VERSION__": "2.2.0",
+            "__NUMDEPS__": 1
+        },
+        "qs": {
+            "__VERSION__": "2.3.3",
+            "__NUMDEPS__": 0
+        }
+    },
+    "nodemailer": {
+        "__VERSION__": "1.3.0",
+        "__NUMDEPS__": 5
+    },
+    "etag": {
+        "__VERSION__": "1.5.1",
+        "__NUMDEPS__": 1
+    },
+    "generic-pool": {
+        "__VERSION__": "2.0.4",
+        "__NUMDEPS__": 0
+    },
+    "tedious": {
+        "__VERSION__": "1.8.1",
+        "__NUMDEPS__": 3
+    },
+    "loopback-connector": {
+        "__VERSION__": "1.2.0",
+        "__NUMDEPS__": 1
+    },
+    "readable-stream": {
+        "__VERSION__": "1.1.13",
+        "__NUMDEPS__": 4
+    },
+    "stream-counter": {
+        "__VERSION__": "0.2.0",
+        "__NUMDEPS__": 1
+    },
+    "mime-types": {
+        "__VERSION__": "2.0.7",
+        "__NUMDEPS__": 1
+    },
+    "emitter-listener": {
+        "__VERSION__": "1.0.1",
+        "__NUMDEPS__": 1
+    },
+    "async-listener": {
+        "__VERSION__": "0.4.7",
+        "__NUMDEPS__": 1
+    },
+    "jayson": {
+        "__VERSION__": "1.1.3",
+        "__NUMDEPS__": 4
+    },
+    "request": {
+        "__VERSION__": "2.51.0",
+        "__NUMDEPS__": 16,
+        "qs": {
+            "__VERSION__": "2.3.3",
+            "__NUMDEPS__": 0
+        }
+    },
+    "xml2js": {
+        "__VERSION__": "0.4.4",
+        "__NUMDEPS__": 2
+    },
+    "cors": {
+        "__VERSION__": "2.5.3",
+        "__NUMDEPS__": 1
+    },
+    "finalhandler": {
+        "__VERSION__": "0.3.3",
+        "__NUMDEPS__": 3,
+        "on-finished": {
+            "__VERSION__": "2.2.0",
+            "__NUMDEPS__": 1
+        }
+    },
+    "cookie-signature": {
+        "__VERSION__": "1.0.5",
+        "__NUMDEPS__": 0
+    },
+    "proxy-addr": {
+        "__VERSION__": "1.0.5",
+        "__NUMDEPS__": 2
+    },
+    "send": {
+        "__VERSION__": "0.11.1",
+        "__NUMDEPS__": 10,
+        "on-finished": {
+            "__VERSION__": "2.2.0",
+            "__NUMDEPS__": 1
+        }
+    },
+    "serve-static": {
+        "__VERSION__": "1.8.1",
+        "__NUMDEPS__": 4
+    },
+    "cookie": {
+        "__VERSION__": "0.1.2",
+        "__NUMDEPS__": 0
+    },
+    "utils-merge": {
+        "__VERSION__": "1.0.0",
+        "__NUMDEPS__": 0
+    },
+    "libmime": {
+        "__VERSION__": "0.1.7",
+        "__NUMDEPS__": 3
+    },
+    "hyperquest": {
+        "__VERSION__": "0.3.0",
+        "__NUMDEPS__": 2
+    },
+    "nodemailer-smtp-transport": {
+        "__VERSION__": "0.1.13",
+        "__NUMDEPS__": 2
+    },
+    "nodemailer-direct-transport": {
+        "__VERSION__": "1.0.0",
+        "__NUMDEPS__": 1
+    },
+    "buildmail": {
+        "__VERSION__": "1.2.0",
+        "__NUMDEPS__": 5
+    },
+    "isarray": {
+        "__VERSION__": "0.0.1",
+        "__NUMDEPS__": 0
+    },
+    "string_decoder": {
+        "__VERSION__": "0.10.31",
+        "__NUMDEPS__": 0
+    },
+    "commander": {
+        "__VERSION__": "1.3.2",
+        "__NUMDEPS__": 1
+    },
+    "JSONStream": {
+        "__VERSION__": "0.8.0",
+        "__NUMDEPS__": 2
+    },
+    "bl": {
+        "__VERSION__": "0.9.4",
+        "__NUMDEPS__": 1,
+        "readable-stream": {
+            "__VERSION__": "1.0.33",
+            "__NUMDEPS__": 4
+        }
+    },
+    "forever-agent": {
+        "__VERSION__": "0.5.2",
+        "__NUMDEPS__": 0
+    },
+    "form-data": {
+        "__VERSION__": "0.2.0",
+        "__NUMDEPS__": 3
+    },
+    "tunnel-agent": {
+        "__VERSION__": "0.4.0",
+        "__NUMDEPS__": 0
+    },
+    "http-signature": {
+        "__VERSION__": "0.10.1",
+        "__NUMDEPS__": 3
+    },
+    "tough-cookie": {
+        "__VERSION__": "0.12.1",
+        "__NUMDEPS__": 1
+    },
+    "oauth-sign": {
+        "__VERSION__": "0.5.0",
+        "__NUMDEPS__": 0
+    },
+    "hawk": {
+        "__VERSION__": "1.1.1",
+        "__NUMDEPS__": 4
+    },
+    "aws-sign2": {
+        "__VERSION__": "0.5.0",
+        "__NUMDEPS__": 0
+    },
+    "combined-stream": {
+        "__VERSION__": "0.0.7",
+        "__NUMDEPS__": 1
+    },
+    "xmlbuilder": {
+        "__VERSION__": "2.4.5",
+        "__NUMDEPS__": 1
+    },
+    "ipaddr.js": {
+        "__VERSION__": "0.1.6",
+        "__NUMDEPS__": 0
+    },
+    "mime": {
+        "__VERSION__": "1.2.11",
+        "__NUMDEPS__": 0
+    },
+    "duplexer": {
+        "__VERSION__": "0.1.0",
+        "__NUMDEPS__": 0
+    },
+    "assert-plus": {
+        "__VERSION__": "0.1.5",
+        "__NUMDEPS__": 0
+    },
+    "asn1": {
+        "__VERSION__": "0.1.11",
+        "__NUMDEPS__": 0
+    },
+    "punycode": {
+        "__VERSION__": "1.0.0",
+        "__NUMDEPS__": 0
+    },
+    "boom": {
+        "__VERSION__": "0.4.2",
+        "__NUMDEPS__": 1
+    },
+    "hoek": {
+        "__VERSION__": "0.9.1",
+        "__NUMDEPS__": 0
+    },
+    "cryptiles": {
+        "__VERSION__": "0.2.2",
+        "__NUMDEPS__": 1
+    },
+    "sntp": {
+        "__VERSION__": "0.2.4",
+        "__NUMDEPS__": 1
+    },
+    "delayed-stream": {
+        "__VERSION__": "0.0.5",
+        "__NUMDEPS__": 0
+    }
+}
