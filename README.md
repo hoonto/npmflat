@@ -9,7 +9,7 @@ This becomes especially handy on windows systems but also seems to solve some np
 
 Usage: npmflat package.json [,schema.txt]
 
-# Notes:
+## Notes
 
 This module differs from other flattening modules in that it traverses the package.json dependencies hierarchy first without installing anything (using npm.command.view to retrieve nested package.json’s in the registry). It then builds a flattened structure based on the semver requirements of each package, lifting packages in the hierarchy where there are not semver conflicts for the same package. It then installs the packages in the correct order and eliminates unnecessary modules that have already been lifted higher in the hierarchy.
 
