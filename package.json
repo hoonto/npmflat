@@ -1,0 +1,11 @@
+{
+  "name": "npmflat",
+  "version": "0.1.0",
+  "description": "Flattens the npm hierarchy into an npm-shrinkwrap.json file, especially useful for Windows systems (if you so happen to have to be on one)",
+  "author": "mmullens@hoonto.com",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
