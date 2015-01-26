@@ -75,6 +75,8 @@ PackageBuilder.prototype.build = function(opts/*currentWD,inPackageName,producti
     }
 
     function explorePackage(packageName,packageVersion,outPack,parentStr){
+        if(!packageVersion) packageVersion = '*';
+
         writeSameLine('reading: ' + packageName+'@'+packageVersion);
 
         packageReads[packageName+'@'+packageVersion] = packageReads[packageName+'@'+packageVersion] ? ++packageReads[packageName+'@'+packageVersion] : 1;
