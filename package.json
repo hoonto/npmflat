@@ -1,11 +1,24 @@
 {
   "name": "npmflat",
   "version": "0.1.0",
+  "main": "index.js",
   "description": "Flattens the npm hierarchy into an npm-shrinkwrap.json file, especially useful for Windows systems (if you so happen to have to be on one)",
-  "author": "mmullens@hoonto.com",
-  "license": "MIT",
-  "dependencies": {
+  "homepage": "http://github.com/hoonto/npmflat",
+  "author": {
+    "name": "Matt Mullens"
   },
-  "devDependencies": {
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoonto/npmflat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hoonto/npmflat/issues"
+  },
+  "licenses": [{
+      "type": "MIT"
+  }],
+  "issues": "https://github.com/hoonto/npmflat/issues",
+  "readmeFilename": "README.md",
+  "dependencies": {},
+  "devDependencies": {}
 }
