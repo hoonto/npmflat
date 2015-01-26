@@ -8,18 +8,17 @@ npmflat may be handy on windows systems where common utilities such as Explorer 
 
 Install: npm install -g npmflat
 
-Usage: npmflat [,--production][,install]
+Usage: npmflat [--production] [install]
 
 ## Examples:
-* `npmflat` will produce the npm-shrinkwrap.json including dependencies, devDependencies, and optionalDependencies but not execute `npm install`
-* `npmflat --production` will produce an npm-shrinkwrap.json file in the directory from which it is executed provided a package.json in the same directory exists including dependencies, devDependencies, and optionalDependencies.
-* `npmflat install` will produce an npm-shrinkwrap.json file in the directory from which it is executed provided a package.json in the same directory exists including dependencies, devDependencies, and optionalDependencies. It will then execute `npm install`.
-* `npmflat --production install` will produce an npm-shrinkwrap.json file in the directory from which it is executed provided a package.json in the same directory exists including dependencies and optionalDependencies. It will then execute `npm install`.
+* `npmflat` will produce the npm-shrinkwrap.json file in the directory from which it is executed including the dependencies, devDependencies, and optionalDependencies indicated in the package.json that should also be present in the current working directory. It will not execute an npm install, that would have to be done manually (`npm install`).
+* `npmflat --production` will produce an npm-shrinkwrap.json provided a package.json in the same directory exists including dependencies and optionalDependencies but excluding devDependencies.
+* `npmflat install` does the same thing as `npmflat` but also executes `npm install` programmatically.
+* `npmflat --production install` does the same thing as `npmflat --production` but also executes `npm install` programmatically.
 
 ## Notes
 
+* npmflat will overwrite any existing npm-shrinkwrap.json file present!
 * npmflat itself only requires npm to be globally installed prior to execution.
-* npmflat does not yet pass command-line arguments to npm when the install option is provided. So on windows for example, if you wanted to pass the Visual Studio 2013 tool-chain to node-gyp via the npm install switch `-msvs-version=”2013”` then you would prefer to use npmflat to generate the npm-shrinkwrap.json and execute `npm install -msvs-version=”2013”` separately.
-
-
+* npmflat does not yet pass command-line arguments to npm when the install option is provided. So for example, on windows if you wanted to pass the Visual Studio 2013 tool-chain to node-gyp via the npm install switch `-msvs-version=”2013”` then you would prefer to use npmflat to generate the npm-shrinkwrap.json and execute `npm install -msvs-version=”2013”` separately.
 
