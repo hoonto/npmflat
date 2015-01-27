@@ -19,7 +19,7 @@ function PackageBuilder() {}
  * }
  */
 
-PackageBuilder.prototype.build = function(opts/*currentWD,inPackageName,production*/){
+PackageBuilder.prototype.build = function(opts){
     //throws error if it doesn't exist
     inPackage = require(opts.packagePath);
 
