@@ -20,7 +20,11 @@ Usage: npmflat [--production] [install]
 ## Notes
 
 * npmflat will overwrite any existing npm-shrinkwrap.json file present!
+
 * npmflat itself only requires npm to be globally installed prior to execution.
+
 * npmflat does not yet pass command-line arguments to npm when the install option is provided. So for example, on windows if you wanted to pass the Visual Studio 2013 tool-chain to node-gyp via the npm install switch `-msvs-version=”2013”` then you would prefer to use npmflat to generate the npm-shrinkwrap.json and execute `npm install -msvs-version=”2013”` separately.
+
 * If you get ENOENT error on install it may be the case that one of your locally installed modules is attempting to chmod a bin file that does not exist due to our modified npm-shrinkwrap.json file (it exists somewhere else up the hierarchy now).  If this is happening to you, try running `npm install --no-bin-links` and then find the offending file elsewhere in the hierarchy and chmod +x manually (if this is necessary for the package to work for you, which it may not be)
 
+* Sometimes I’ve wound up with large npm-shrinkwrap.json files that npm install hangs on. If you experience this issue, try splitting the npm-shrinkwrap.json top-level dependencies into two or more pieces and doing the install for each (split the large one into several non-overlapping ones, rename the original, and move each to npm-shrinkwrap.json and install, and repeat for each).  I’ve only had this happen when I’m at around 6000+ line npm-shrinkwrap.json and splitting it into two worked fine.
