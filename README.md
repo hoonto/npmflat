@@ -1,8 +1,9 @@
 ﻿npmflat
 ========
 
-Analyze a package.json and produce and npm-shrinkwrap.json file that may be used by npm or directly by npmflat to install dependencies into a flattened structure given each packages semantic version requirements. As a side-effect, this also deduplicates modules to some degree - it is possible to get duplicate sibling dependencies in parent hierarchies if greater than three packages, two of which have the same version are attempting to rise up the same tree and the lone differently versioned package makes its way to the top first.
-A better algorithm for selecting packages that move up the hierarchy may be developed - at this point, the first package seen is moved to the top of the hierarchy.
+Analyze a package.json and produce the npm-shrinkwrap.json file that may be used by npm or directly by npmflat to install dependencies into a flattened structure given each packages semantically versioned dependencies. npmflat differs from other node_module hierarchy flattening modules that I’ve come across in that it does not install a deep nest and then move things around - it builds the npm-shrinkwrap specifically to reduce installation and install depth overhead from the start.
+
+As a side-effect, npmflat also deduplicates modules to some degree although a better algorithm for selecting packages that move up the dependency graph could be developed in order to further optimize. At this point however the first package encountered while searching the hierarchy tree of package.json’s is moved to the top of the hierarchy and if other semantically versioned dependencies in the graph would be in conflict, then they are promoted up the hierarchy until a potential conflict would occur.
 
 npmflat may be handy on windows systems where common utilities such as Explorer and DOS have character limits of something like 260 characters for file name and path together (yes this is the case, and yes the year is currently 2015).
 
