@@ -1,3 +1,5 @@
+'use strict';
+
 var npmflat = module.exports;
 var npm = require('npm');
 var fs = require('fs');
@@ -5,10 +7,10 @@ var path = require("path");
 
 
 npmflat.packageBuilder = new PackageBuilder();
-npmflat.packages = {};
-var packageReads = {};
 
-function PackageBuilder() {}
+function PackageBuilder() {
+    this.packages = {};
+}
 
 /**
  * opts: {
@@ -20,12 +22,16 @@ function PackageBuilder() {}
  */
 
 PackageBuilder.prototype.build = function(opts){
-    //throws error if it doesn't exist
-    inPackage = require(opts.packagePath);
+    var self = this;
 
-    npmflat.packages.name = inPackage.name;
-    npmflat.packages.version = inPackage.version;
-    npmflat.packages.dependencies = {};
+    var packageReads = {};
+
+    //throws error if it doesn't exist
+    var inPackage = require(opts.packagePath);
+
+    self.packages.name = inPackage.name;
+    self.packages.version = inPackage.version;
+    self.packages.dependencies = {};
 
     function writeSameLine(str) {
         process.stdout.clearLine();
@@ -70,7 +76,7 @@ PackageBuilder.prototype.build = function(opts){
             if(!err) writeSameLine('Wrote npm-shrinkwrap.json\n');
             else console.log('\nError writing npm-shrinkwrap.json: ',err);
 
-            if(opts.install) install(npmflat.packages);
+            if(opts.install) install(self.packages);
         });
     }
 
@@ -127,7 +133,7 @@ PackageBuilder.prototype.build = function(opts){
             });
 
             writeSameLine('Discovering dependencies...');
-            eachDep(inPackage.dependencies,npmflat.packages,'');
+            eachDep(inPackage.dependencies,self.packages,'');
             var lastKeysLength = 0;
 
             var interval = setInterval(function() {
@@ -135,7 +141,7 @@ PackageBuilder.prototype.build = function(opts){
 
                 if(currentKeysLength === lastKeysLength && lastKeysLength < 2){
                     clearInterval(interval);
-                    processEachDep(npmflat.packages);
+                    processEachDep(self.packages);
                 }else{
                     lastKeysLength = currentKeysLength;
                 }
