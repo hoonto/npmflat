@@ -3,7 +3,7 @@
   "version": "0.1.5",
   "main": "index.js",
   "bin" : "./bin/npmflat",
-  "description": "Flattens the npm hierarchy into an npm-shrinkwrap.json file, especially useful for Windows systems (if you so happen to have to be on one)",
+  "description": "Flattens the npm hierarchy into an npm-shrinkwrap.json file, especially useful for Windows systems",
   "homepage": "http://github.com/hoonto/npmflat",
   "keywords": [
     "shrinkwrap",
