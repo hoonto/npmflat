@@ -1,6 +1,6 @@
 {
   "name": "npmflat",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "index.js",
   "bin" : "./bin/npmflat",
   "description": "Flattens the npm hierarchy into an npm-shrinkwrap.json file, especially useful for Windows systems",
