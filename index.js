@@ -122,16 +122,19 @@ PackageBuilder.prototype.build = function(opts){
     npm.load(function(err,npm){
         if(!err){
             // Add dev dependencies
-            if(!opts.production){
+            if(!inPackage.dependencies) inPackage.dependencies = {};
+
+            if(!opts.production && inPackage.devDependencies){
                 Object.keys(inPackage.devDependencies).forEach(function(key){
                     inPackage.dependencies[key] = inPackage.devDependencies[key];
                 });
             }
             // Add optional dependencies
-            Object.keys(inPackage.optionalDependencies).forEach(function(key){
-                inPackage.dependencies[key] = inPackage.optionalDependencies[key];
-            });
-
+            if(inPackage.optionalDependencies){
+                Object.keys(inPackage.optionalDependencies).forEach(function(key){
+                    inPackage.dependencies[key] = inPackage.optionalDependencies[key];
+                });
+            }
             writeSameLine('Discovering dependencies...');
             eachDep(inPackage.dependencies,self.packages,'');
             var lastKeysLength = 0;
