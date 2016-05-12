@@ -1,6 +1,8 @@
 ﻿npmflat
 ========
 
+* Note: Use this only if you have to use less than npm@3.0.0 as npm 3 will do this for you.
+
 Analyze a package.json and produce the npm-shrinkwrap.json file that may be used by npm or directly by npmflat to install dependencies into a flattened structure given each packages semantically versioned dependencies. npmflat differs from other node_module hierarchy flattening modules that I’ve come across in that it does not install a deep nest and then move things around - it builds the npm-shrinkwrap specifically to reduce installation and install depth overhead from the start.
 
 As a side-effect, npmflat also deduplicates modules to some degree although a better algorithm for selecting packages that move up the dependency graph could be developed in order to further optimize. At this point however the first package encountered while searching the hierarchy tree of package.json’s is moved to the top of the hierarchy and if other semantically versioned dependencies in the graph would be in conflict, then they are promoted up the hierarchy until a potential conflict would occur.
